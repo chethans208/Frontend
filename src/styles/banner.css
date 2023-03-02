@@ -1,0 +1,7 @@
+.banner{
+    background:  url('../../public/images/food1.jpeg');
+    height: 90vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

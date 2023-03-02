@@ -1,0 +1,28 @@
+.home1 {
+    padding: 20px 150px;
+}
+
+.home2 {
+    position: relative;
+    /* right: 20px; */
+    top: 60px;
+}
+
+.div {
+    height: 5px;
+    background-color: black;
+}
+
+.home3 {
+    padding: 20px 140px;
+}
+
+.home3 .smallimage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home3 .largeimage {
+    position: relative;
+    top: 15px;
+}

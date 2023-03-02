@@ -1,0 +1,15 @@
+.abouttext {
+    position: relative;
+    right: 50px;
+}
+
+.about2,
+.about3,
+.about3,
+.about4,
+.about5 {
+    width: 230px;
+    padding: 40px 10px;
+    height: 200px;
+    background-color: rgba(196, 196, 193, 0.148);
+}

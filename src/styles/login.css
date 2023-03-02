@@ -1,0 +1,23 @@
+.login{
+    margin: 0px;
+    background:linear-gradient(130deg,rgb(216, 149, 149),rgb(146, 168, 231));
+    background-size: cover;
+    padding: 100px 200px;
+    
+}
+
+.login .form{
+    width: 50%;
+    background-color: rgb(150, 203, 221);
+    padding: 80px;
+    border-radius: 20px;
+    position: relative;
+    left: 300px;
+    margin: 20px 0px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(24, 2, 2);
+}
+
+.login .btn{
+    background: linear-gradient(130deg,rgb(216, 149, 149),rgb(146, 168, 231));
+}
