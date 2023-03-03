@@ -12,7 +12,6 @@ const Posts = () => {
         let fetchData = async () => {
             let response = await axios.get("http://localhost:4000/foods")
             let data = await response.data
-            console.log(data);
             setPosts(data)
         }
         fetchData()
@@ -20,6 +19,7 @@ const Posts = () => {
     return (
         <div className="posts">
             <Banner data={title} />
+
             <div className="posts1 m-2 row">
                 {posts.map((x) => (
                     <div className="postdetails p-3 m-2 rounded-3 col-2">

@@ -1,9 +1,32 @@
 import Banner from "./banner";
 import about from "../styles/about.css"
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 
 const About = () => {
     let title = "About Page";
+
+    let [posts, setPosts] = useState([])
+    useEffect(() => {
+        let fetchData = async () => {
+            let response = await axios.get("http://localhost:4000/foods")
+            let data = await response.data
+            setPosts(data)
+        }
+        fetchData()
+    }, [])
+
+    let [customers, setCustomers] = useState([])
+    useEffect(() => {
+        let fetchData = async () => {
+            let response = await axios.get("http://localhost:4000/signup")
+            let data = await response.data
+            setCustomers(data)
+        }
+        fetchData()
+    }, [])
+
     return (
         <div className="about">
             <Banner data={title} />
@@ -20,7 +43,7 @@ const About = () => {
                             <p className="text-center fs-5">Years of Experienced</p>
                         </div>
                         <div className="about3 rounded-3 m-5 col-6">
-                            <h1 className="text-center fw-bolder">200</h1>
+                            <h1 className="text-center fw-bolder">{posts.length}</h1>
                             <p className="text-center fs-5">Foods</p>
                         </div>
                         <div className="about4 rounded-3 m-5 col-6">
@@ -28,7 +51,7 @@ const About = () => {
                             <p className="text-center fs-5">LifeStyle</p>
                         </div>
                         <div className="about5 rounded-3 m-5 col-6">
-                            <h1 className="text-center fw-bolder">40</h1>
+                            <h1 className="text-center fw-bolder">{customers.length}</h1>
                             <p className="text-center fs-5">Haapy customers</p>
                         </div>
                     </div>

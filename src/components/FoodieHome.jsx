@@ -16,10 +16,10 @@ const Home = () => {
                     <h1>Love the delicious & Tasty foods</h1>
                     <div className="div w-75"></div>
                     <p> laudantium aliquam, similique quaerat quas rerum modi adipisci esse repudiandae consequuntur.</p>
-                    <button className="btn btn-lg btn-info">Add a Post</button>
+                    <button className="btn btn-lg btn-danger ">Add a Post</button>
                     <div className="home2 row mt-3 position-relative top-25">
-                        <Link to="" className="w-50 col-6 border-0 btn btn-lg btn-dark">&larr;Forward</Link>
-                        <Link to="" className="w-50 col-6 border-0 btn btn-lg btn-light">Next   &rarr;</Link>
+                        <Link to="" className="w-50 col-6 border-0  rounded-0 btn btn-lg btn-dark">&larr;Forward</Link>
+                        <Link to="" className="w-50 col-6 border-0 rounded-0 btn btn-lg btn-light">Next   &rarr;</Link>
                     </div>
                 </div>
             </div>
